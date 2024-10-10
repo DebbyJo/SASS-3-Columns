@@ -10,6 +10,10 @@
   font-family: Lexend;
   src: url("LexendDeca-Regular.woff");
 }
+@font-face {
+  font-family: BigShoulders;
+  src: url("BigShouldersDisplay-Regular.woff");
+}
 .card__flex__container {
   font-family: Lexend;
 }
@@ -60,6 +64,7 @@
 .card__headline {
   font-size: var(--big-text);
   font-weight: var(--font-weight-thick);
+  font-family: BigShoulders;
 }
 .card__text {
   font-size: var(--small-text);
@@ -91,4 +96,10 @@
 }
 .card__svg {
   margin-top: 3rem;
+}
+.card__button__orange, .card__button__green, .card__button__blue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4rem;
 }/*# sourceMappingURL=style.css.map */
