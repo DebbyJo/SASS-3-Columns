@@ -1,17 +1,73 @@
+:root {
+  --small-text: 20px;
+  --font-weight-thick: bold;
+  --big-text: 40px;
+  --font-weight: none;
+  --width: 250px;
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url("LexendDeca-Regular.woff");
+}
+.card__flex__container {
+  font-family: Lexend;
+}
 .card__orange {
   background: hsl(31, 77%, 52%);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   height: 30rem;
-  width: 30rem;
+  width: 20rem;
+  padding: 2rem;
+  color: white;
 }
 .card__blue {
   background-color: hsl(184, 100%, 22%);
   height: 30rem;
-  width: 30rem;
+  width: 20rem;
+  padding: 2rem;
+  color: white;
 }
 .card__green {
   background-color: hsl(179, 100%, 13%);
   height: 30rem;
-  width: 30rem;
+  width: 20rem;
+  padding: 2rem;
+  color: white;
+}
+.card__headline {
+  font-size: var(--big-text);
+  font-weight: var(--font-weight-thick);
+}
+.card__text {
+  font-size: var(--small-text);
+  font-weight: var(--font-weight);
+}
+.card__button__orange {
+  color: hsl(31, 77%, 52%);
+  border-radius: 2rem;
+  width: 7rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+}
+.card__button__green {
+  color: hsl(184, 100%, 22%);
+  border-radius: 2rem;
+  width: 7rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+}
+.card__button__blue {
+  color: hsl(179, 100%, 13%);
+  border-radius: 2rem;
+  width: 7rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+}
+.card__svg {
+  margin-top: 3rem;
 }/*# sourceMappingURL=style.css.map */
