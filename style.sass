@@ -2,7 +2,7 @@
     --small-text: 20px
     --font-weight-thick: bold
     --big-text: 40px
-    --font-weight: none
+    --font-weight: 400
     --width: 250px
 
 @font-face 
@@ -23,21 +23,27 @@
     text-align: center
     background-color: white
     
-
- 
-     
-    
 .card 
 
     &__flex__container 
         font-family: Lexend
+    
+        @media screen and (min-width: 600px)
+            display: flex
+            flex-direction: row
+
+    
 
     &__orange 
         background: hsl(31, 77%, 52%)
         border-top-left-radius: 1rem
         border-top-right-radius: 1rem
         @include card-structure()
-     
+
+        @media screen and (min-width: 600px)
+            border-bottom-left-radius: 1rem
+            border-top-right-radius: 0rem 
+
        
 
     &__blue
@@ -46,7 +52,15 @@
 
     &__green 
          background-color: hsl(179, 100%, 13%)
+         border-bottom-left-radius: 1rem
+         border-bottom-right-radius: 1rem
          @include card-structure()
+
+         @media screen and (min-width: 600px)
+            border-top-right-radius: 1rem
+            border-bottom-right-radius: 1rem
+            border-bottom-left-radius: 0rem
+
 
     &__headline
         font-size: var(--big-text)
