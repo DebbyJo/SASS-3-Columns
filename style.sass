@@ -1,2 +1,29 @@
-.test 
-    color: red
+
+@mixin card-structure()
+    height: 30rem
+    width: 30rem
+    
+    
+    
+.card 
+    &__orange 
+        background: hsl(31, 77%, 52%)
+        border-top-left-radius: 1rem
+        border-top-right-radius: 1rem
+        @include card-structure()
+       
+
+    &__blue
+        background-color: hsl(184, 100%, 22%)
+        @include card-structure()
+
+    &__green 
+         background-color: hsl(179, 100%, 13%)
+         @include card-structure()
+        
+        
+        
+        
+
+        
+        
