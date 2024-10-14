@@ -15,56 +15,60 @@
     src: url('BigShouldersDisplay-Regular.woff')
 
 @mixin card-structure()
-    height: 30rem
     width: 20rem
     padding: 2rem
     color: white
    
+   
 @mixin button()
     border-radius: 2rem
     width: 7rem
-    padding: 1rem
     text-align: center
     background-color: white
-    
-.card 
-
-    &__flex__container 
-        font-family: Lexend
-    
-        @media screen and (min-width: 600px)
-            display: flex
-            flex-direction: row
+    padding: 1rem
 
     
-
-    &__orange 
-        background: hsl(31, 77%, 52%)
+.card
+  
+    
+    &--orange
+        background-color: hsl(31, 77%, 52%)
         border-top-left-radius: 1rem
         border-top-right-radius: 1rem
-        @include card-structure()
+        
 
-        @media screen and (min-width: 600px)
-            border-bottom-left-radius: 1rem
-            border-top-right-radius: 0rem 
 
+    &--blue
+        background-color: hsl(184, 100%, 22%)
+         border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+      
+
+    &--green
+        background-color: hsl(179, 100%, 13%)
+        border-bottom-left-radius: 1rem
+        border-bottom-right-radius: 1rem
        
 
-    &__blue
-        background-color: hsl(184, 100%, 22%)
+    img
+        max-width: 60px
+        margin-top: 3rem
+
+
+.cards 
+
+    &__container 
+        display: flex
+        flex-direction: column
         @include card-structure()
+        padding: 2rem
 
-    &__green 
-         background-color: hsl(179, 100%, 13%)
-         border-bottom-left-radius: 1rem
-         border-bottom-right-radius: 1rem
-         @include card-structure()
-
-         @media screen and (min-width: 600px)
-            border-top-right-radius: 1rem
-            border-bottom-right-radius: 1rem
-            border-bottom-left-radius: 0rem
-
+     
+    &__button__container
+        display: flex
+        align-items: flex-end
+        height: 100%
+        
 
     &__headline
         font-size: var(--big-text)
@@ -74,43 +78,17 @@
     &__text
         font-size: var(--small-text)
         font-weight: var(--font-weight)
+        margin-top: -1rem
         
 
     &__button__orange
         color: hsl(31, 77%, 52%)
         @include button()
 
-    
-    &__button__green
-        color: hsl(184, 100%, 22%)
-        @include button()
-    
-
     &__button__blue
+        color:  hsl(184, 100%, 22%)
+        @include button()
+
+    &__button__green
         color: hsl(179, 100%, 13%)
         @include button()
-
-    &__svg
-        margin-top: 3rem
-        
-    
-    &__button__orange,
-    &__button__green,
-    &__button__blue
-        display: flex
-        flex-direction: row
-        align-items: center
-        margin-top: 4rem
-     
-
-
-
-    
-
-    
-        
-        
-        
-
-        
-        
